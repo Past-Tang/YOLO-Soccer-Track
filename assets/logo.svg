@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 240" fill="none">
+  <rect width="680" height="240" rx="16" fill="#0d1117"/>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#161b22" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="680" height="240" fill="url(#grid)"/>
+  
+  <!-- Soccer ball + bounding box -->
+  <g transform="translate(60, 35)">
+    <!-- Bounding box -->
+    <rect x="10" y="10" width="100" height="100" rx="4" fill="none" stroke="#3fb950" stroke-width="2" stroke-dasharray="6,3"/>
+    <!-- Corner markers -->
+    <path d="M10 25 L10 10 L25 10" stroke="#3fb950" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M95 10 L110 10 L110 25" stroke="#3fb950" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M110 95 L110 110 L95 110" stroke="#3fb950" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M25 110 L10 110 L10 95" stroke="#3fb950" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <!-- Soccer ball -->
+    <circle cx="60" cy="60" r="30" fill="#1a2332" stroke="#e6edf3" stroke-width="2"/>
+    <path d="M60 30 L72 45 L60 52 L48 45 Z" fill="none" stroke="#e6edf3" stroke-width="1.2"/>
+    <path d="M60 52 L60 68 M48 45 L35 55 M72 45 L85 55" stroke="#e6edf3" stroke-width="1.2"/>
+    <path d="M35 55 L40 72 L60 68 L80 72 L85 55" fill="none" stroke="#e6edf3" stroke-width="1.2"/>
+    <!-- ID label -->
+    <rect x="70" y="5" width="45" height="18" rx="3" fill="#3fb950"/>
+    <text x="92" y="17" font-family="monospace" font-size="10" fill="#0d1117" text-anchor="middle" font-weight="700">ID: 01</text>
+    <!-- Track line -->
+    <path d="M60 120 Q70 130 85 128 Q100 126 115 135" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="3,3" fill="none" opacity="0.5"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="210" y="80" font-family="'Segoe UI', system-ui, sans-serif" font-size="44" fill="#e6edf3" font-weight="700" letter-spacing="-1">YOLO Soccer</text>
+  <text x="210" y="130" font-family="'Segoe UI', system-ui, sans-serif" font-size="44" fill="#3fb950" font-weight="700" letter-spacing="-1">Track</text>
+  
+  <text x="212" y="163" font-family="'Segoe UI', system-ui, sans-serif" font-size="15" fill="#7d8590">足球目标检测与跟踪 | IKCEST 2024 TOP2</text>
+  
+  <g transform="translate(212, 180)">
+    <rect x="0" y="0" width="78" height="22" rx="11" fill="#1a2332" stroke="#3fb950" stroke-width="1"/>
+    <text x="39" y="15" font-family="monospace" font-size="10" fill="#3fb950" text-anchor="middle">YOLOv12</text>
+    <rect x="88" y="0" width="78" height="22" rx="11" fill="#1a2332" stroke="#f85149" stroke-width="1"/>
+    <text x="127" y="15" font-family="monospace" font-size="10" fill="#f85149" text-anchor="middle">PyTorch</text>
+    <rect x="176" y="0" width="78" height="22" rx="11" fill="#1a2332" stroke="#58a6ff" stroke-width="1"/>
+    <text x="215" y="15" font-family="monospace" font-size="10" fill="#58a6ff" text-anchor="middle">OpenCV</text>
+    <rect x="264" y="0" width="68" height="22" rx="11" fill="#1a2332" stroke="#f0883e" stroke-width="1"/>
+    <text x="298" y="15" font-family="monospace" font-size="10" fill="#f0883e" text-anchor="middle">Gradio</text>
+  </g>
+</svg>
